@@ -47,13 +47,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: #e3e5fc;
+    background: #e3e5ff;
 }
 
 .description p {
     max-width: 50ch;
     margin-bottom: 0.8em;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .description {
@@ -62,21 +62,23 @@ body {
 }
 
 .form-container {
-    background-color: #ff4b69;
-    padding-left: 2.5em;
-    color: #fffb1d;
+    background-color: white;
+    /* padding-left: 2.5em;
+    padding-top: 1rem; */
+    padding: 1rem 0 1em 2.5em;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .form-container h1 {
     font-size: 24px;
-    margin: 0.8rem 0;
+    margin-bottom: 1rem;
 }
 
 .form-row {
     display: flex;
-    width: 40em;
+    width: 35em;
     justify-content: space-between;
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
 }
 
 label {
@@ -85,5 +87,43 @@ label {
     flex-shrink: 0;
     width: 45%;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
+    color: rgb(36, 36, 36);
+}
+
+input,
+select {
+    padding: 0.3rem 0.2rem;
+    font-size: 1.2em;
+    border-radius: 0;
+    border: 1px solid #5e76fc6c;
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #5e76fc;
+    box-shadow: 7px 7px 8px -1px rgba(0,0,0,0.19);;
+}
+
+button[type="submit"] {
+    margin: 2em 0 0 2.5rem;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 0, 34);
+    font-size: 18px;
+    font-weight: 800;
+    color: rgb(255, 175, 54);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+    transition-duration: 0.1s;
+}
+
+button[type="submit"]:hover {
+    background-color: white;
+    color: blue;
+}
+
+button[type="submit"]:active {
+    box-shadow: inset 0px 0px 5px 3px rgba(0,0,0,0.5);
 }
