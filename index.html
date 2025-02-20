@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="left-container">
+        <div class="logo-container">
+            <img src="img/Kirby_2022_logo.svg" alt="Kirby series logo">
+        </div>
+    </div>
+    <div class="right-container">
+        <div class="description">
+            <p><strong>Kirby needs your help!</strong> Planet Popstar often finds itself in danger. Be it because King Dedede, or a friend that betrays you later on, or a biblically accurate angel.</p>
+            <p>This is <em>your</em> chance to become one of Kirby's allies through one of several positions available! Sign up below to get started.</p>
+        </div>
+        <div class="form-container">
+            <h1>Let's join!</h1>
+            <form action="post">
+                <div class="form-row">
+                    <label for="first-name">FIRST NAME
+                        <input type="text" name="first-name" id="first-name">
+                    </label>
+                    <label for="last-name">LAST NAME
+                        <input type="text" name="last-name" id="last-name">
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label for="email">EMAIL
+                        <input type="email" name="email" id="email">
+                    </label>
+                    <label for="phone-number">PHONE NUMBER
+                        <input type="text" name="phone-number" id="phone-number">
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label for="secret">A SECRET
+                        <input type="text" name="secret" id="secret">
+                    </label>
+                    <label for="confirm-secret">CONFIRM SECRET
+                        <input type="text" name="confirm-secret" id="confirm-secret">
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label for="desired-position">DESIRED POSITION
+                        <select name="desired-position" id="desired-position">
+                            <option value="fighter">Fighter</option>
+                            <option value="cook" selected>Cook</option>
+                            <option value="adm">Administration</option>
+                            <option value="vending-machine">Vending Machine Product</option>
+                            <option value="poyo">Poyo</option>
+                        </select>
+                    </label>
+                    <label for="fav-waddle-dee">FAVORITE WADDLE DEE
+                        <select name="fav-waddle-dee" id="fav-waddle-dee">
+                            <option value="choose" selected>Choose one</option>
+                            <option value="chad">I do not possess a favorite Waddle Dee, for all Waddle Dees are precious and must be loved equally.</option>
+                        </select>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
